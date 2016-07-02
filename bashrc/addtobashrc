@@ -1,0 +1,22 @@
+# Add this bash sub routine in to your ~/.bashrc file.
+#
+# Everytime you launch ssh it will run this routine and rename your tmux status bar name.
+# Without this routine you can't see the name of the host remote hosts you have logged in.
+# 
+ssh() {
+    if [ "$(ps -p $(ps -p $$ -o ppid=) -o comm=)" = "tmux" ]; then
+            remote_hostname=$(echo $* | sed -e 's/^\([^\.]*\).*/\1/g')
+            echo "connect to $remote_hostname"
+            tmux rename-window $remote_hostname
+            local_hostname=$(echo $HOSTNAME | sed -e 's/^\([^\.]*\).*/\1/')
+            command ssh "$@"
+            if [ $? -eq 255 ]; then
+                 echo "SSH connection to $remote_hostname failed!"
+                 tmux rename-window "$local_hostname"
+            fi
+    else
+            echo "connect to $@ "
+            command ssh "$@"
+    fi
+}
+
