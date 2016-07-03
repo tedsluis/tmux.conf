@@ -17,6 +17,12 @@ Tested on Fedora23+ and RHEL/Centos7+, tmux version 1.8+ and 2.1+
 ### Screenshot example
 [![tmux screenshot](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/tmux_screenshot.gif)](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/tmux_screenshot.gif)
    
+### update your .tmux.conf file   
+Download my ~/[.tmux.conf](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/.tmux.conf) to your home directory using:  
+````
+$ wget -O ~/.tmux.conf https://raw.githubusercontent.com/tedsluis/tmux.conf/master/.tmux.conf
+````
+   
 ### Rename window name in case of a ssh session   
 Tmux is by default not aware of remote hostnames after ssh. It will keep displaying the hostname on which tmux is running in the status bar. This small 'shortcoming' can be resolved by adding a ssh subroutine (a few lines a code) to ~/.bashrc in your home directory: [addtobashrc](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/bashrc/addtobashrc)   
 It will execute these lines evertime you run ssh and rename the tmux status bar name of your ssh session.   
@@ -45,6 +51,8 @@ You need more info on tmux? Check these resources:
 * [https://github.com/tmux/tmux](https://github.com/tmux/tmux)  
 * run 'man tmux' from the command line.  
 * tmux faq at [stackoverflow](http://stackoverflow.com/questions/tagged/tmux?sort=frequent)  
+* [A tmux Crash Course](https://robots.thoughtbot.com/a-tmux-crash-course)
+* [Making tmux Pretty and Usable - A Guide to Customizing your tmux.conf](http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/)
   
 Ted Sluis   
-ted.sluis@gmail.com
+ted.sluis@gmail.com  
