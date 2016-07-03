@@ -18,8 +18,7 @@ Tested on Fedora23+ and RHEL/Centos7+
 [![tmux screenshot](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/tmux_screenshot.gif)](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/tmux_screenshot.gif)
    
 ### Rename window name in case of a ssh session   
-Tmux is by default not aware of remote hostnames after ssh. It will keep displaying the hostname on which tmux is running in the status bar.  
-This small 'shortcoming' can be resolved by adding a ssh subroutine (a few lines a code) to ~/.bashrc in your home directory: [colors.pl](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/bashrc/addtobashrc)   
+Tmux is by default not aware of remote hostnames after ssh. It will keep displaying the hostname on which tmux is running in the status bar. This small 'shortcoming' can be resolved by adding a ssh subroutine (a few lines a code) to ~/.bashrc in your home directory: [addtobashrc](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/bashrc/addtobashrc)   
 It will execute these lines evertime you run ssh and rename the tmux status bar name of your ssh session.   
 (note: this subroutine will become active after you login again)  
    
@@ -35,9 +34,9 @@ Tmux colors (for windows, panes, status bar, etc) can be set within the ~/.tmux.
 [![tmux colors](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/colors/colors.jpg)](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/colors/colors.jpg)
    
 ### Kitty instead of Putty   
-Although [Putty](http://www.putty.org/) is widely used to connect from a Microsoft Windows host to a linux host, it does not support the <shift>-<arrow> and the <alt>-<arrow> keys.  
-<shift>-<left arrow> turns out to be the same as <left arrow> in a terminal.   
-Fortunately a fork of Putty called [Kitty](http://www.9bis.net/kitty/) does support <shift>/<alt>-<arrow keys> and it has many more useful features.  
+Although [Putty](http://www.putty.org/) is widely used to connect from a Microsoft Windows host to a linux host, it does not support the \<shift\>-\<arrow\> and the \<alt\>-\<arrow\> keys.  
+\<shift\>-\<left arrow\> turns out to be the same as \<left arrow\> in a terminal.   
+Fortunately a fork of Putty called [Kitty](http://www.9bis.net/kitty/) does support \<shift\>/\<alt\>-\<arrow keys\> and it has many more useful features.  
 Kitty can be download here: [http://www.fosshub.com/KiTTY.html](http://www.fosshub.com/KiTTY.html)  
   
 Ted Sluis   
