@@ -12,7 +12,7 @@ My customized tmux config file...
 * Use F2 for help (press 'q' to return).
 * Use F3 for a list of hot-keys (press 'q' to return).
    
-Tested on Fedora23+ and RHEL/Centos7+  
+Tested on Fedora23+ and RHEL/Centos7+, tmux version 1.8+ and 2.1+
    
 ### Screenshot example
 [![tmux screenshot](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/tmux_screenshot.gif)](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/tmux_screenshot.gif)
@@ -23,7 +23,7 @@ It will execute these lines evertime you run ssh and rename the tmux status bar 
 (note: this subroutine will become active after you login again)  
    
 ### Set the correct XTERM   
-Your default terminal may only support 16 colors instead of 256 colors. In this can you could change your XTERM by adding this to ~/.bashrc in your home directory:   
+Your default terminal may only supports 16 colors instead of 256 colors. In this can you could change your XTERM by adding this to ~/.bashrc in your home directory:   
 ````
 export TERM=screen-256color
 ````
