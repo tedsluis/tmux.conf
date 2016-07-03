@@ -1,5 +1,5 @@
 # tmux.conf  
-My tmux config file...  
+My customized tmux config file...  
   
 ### Added features (compared to default tmux)
 * Use prefix \<ctrl\>-\<a\> instead of the default \<ctrl\>-\<b\> prefix.  
@@ -23,13 +23,13 @@ It will execute these lines evertime you run ssh and rename the tmux status bar 
 (note: this subroutine will become active after you login again)  
    
 ### Set the correct XTERM   
-Your default terminal may not support a number 256 colors. In this can you could change your XTERM by adding this to ~/.bashrc in your home directory:   
+Your default terminal may only support 16 colors instead of 256 colors. In this can you could change your XTERM by adding this to ~/.bashrc in your home directory:   
 ````
 export TERM=screen-256color
 ````
 (note:this setting will become active after you login again)  
    
-### Add other colors  
+### Modifying tmux colors  
 Tmux colors (for windows, panes, status bar, etc) can be set within the ~/.tmux.config. A small script called [colors.pl](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/colors/colors.pl) can be very helpful. It shows screen colors with their color number (and name):  
 [![tmux colors](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/colors/colors.jpg)](https://raw.githubusercontent.com/tedsluis/tmux.conf/master/colors/colors.jpg)
    
@@ -38,6 +38,13 @@ Although [Putty](http://www.putty.org/) is widely used to connect from a Microso
 \<shift\>-\<left arrow\> turns out to be the same as \<left arrow\> in a terminal.   
 Fortunately a fork of Putty called [Kitty](http://www.9bis.net/kitty/) does support \<shift\>/\<alt\>-\<arrow keys\> and it has many more useful features.  
 Kitty can be download here: [http://www.fosshub.com/KiTTY.html](http://www.fosshub.com/KiTTY.html)  
+
+### More info   
+You need more info on tmux? Check these resources:  
+* [http://tmux.github.io/](http://tmux.github.io/)  
+* [https://github.com/tmux/tmux](https://github.com/tmux/tmux)  
+* run 'man tmux' from the command line.  
+* tmux faq at [stackoverflow](http://stackoverflow.com/questions/tagged/tmux?sort=frequent)  
   
 Ted Sluis   
 ted.sluis@gmail.com
