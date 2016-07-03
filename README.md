@@ -42,7 +42,8 @@ Tmux colors (for windows, panes, status bar, etc) can be set within the ~/.tmux.
 ### Kitty instead of Putty   
 Although [Putty](http://www.putty.org/) is widely used to connect from a Microsoft Windows host to a linux host, it does not support the \<shift\>-\<arrow\> and the \<alt\>-\<arrow\> keys.  
 \<shift\>-\<left arrow\> turns out to be the same as \<left arrow\> in a terminal.   
-Fortunately a fork of Putty called [Kitty](http://www.9bis.net/kitty/) does support \<shift\>/\<alt\>-\<arrow keys\> and it has many more useful features.  
+Fortunately a fork of Putty called [Kitty](http://www.9bis.net/kitty/) does support \<shift\>/\<alt\>-\<arrow keys\> and it has many more useful features.   
+Be sure you select the 'Xterm R6' within Kitty (configuration/Terminal/Keyboard).  
 Kitty can be download here: [http://www.fosshub.com/KiTTY.html](http://www.fosshub.com/KiTTY.html)  
 
 ### More info   
