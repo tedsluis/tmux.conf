@@ -1,6 +1,16 @@
 # tmux.conf  
-My customized tmux config file...  
+My customized tmux config file... 
   
+* [tmux.conf](#tmuxconf)
+     * [Added features (compared to default tmux)](#added-features-compared-to-default-tmux)
+     * [Screenshot example](#screenshot-example)
+     * [Update your .tmux.conf file](#update-your-tmuxconf-file)
+     * [Rename tmux window name in case of a ssh session](#rename-tmux-window-name-in-case-of-a-ssh-session)
+     * [Set the correct XTERM](#set-the-correct-xterm)
+     * [Modifying tmux colors](#modifying-tmux-colors)
+     * [Kitty instead of Putty](#kitty-instead-of-putty)
+     * [More info](#more-info)
+   
 ### Added features (compared to default tmux)
 * Use prefix \<ctrl\>-\<a\> instead of the default \<ctrl\>-\<b\> prefix.  
 * Use \<shift\>-\<left arrow> and \<shift\>-\<right arrow\> to switch between windows.  
